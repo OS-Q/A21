@@ -1,5 +1,3 @@
-# See: https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification
-
 menu.pnum=Board part number
 
 menu.xserial=U(S)ART support
@@ -45,109 +43,6 @@ Nucleo_144.menu.pnum.NUCLEO_F429ZI.build.series=STM32F4xx
 Nucleo_144.menu.pnum.NUCLEO_F429ZI.build.product_line=STM32F429xx
 Nucleo_144.menu.pnum.NUCLEO_F429ZI.build.variant=NUCLEO_F429ZI
 Nucleo_144.menu.pnum.NUCLEO_F429ZI.build.cmsis_lib_gcc=arm_cortexM4l_math
-
-# NUCLEO_F767ZI board
-Nucleo_144.menu.pnum.NUCLEO_F767ZI=Nucleo F767ZI
-Nucleo_144.menu.pnum.NUCLEO_F767ZI.node=NODE_F767ZI
-Nucleo_144.menu.pnum.NUCLEO_F767ZI.upload.maximum_size=2097152
-Nucleo_144.menu.pnum.NUCLEO_F767ZI.upload.maximum_data_size=524288
-Nucleo_144.menu.pnum.NUCLEO_F767ZI.build.mcu=cortex-m7 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Nucleo_144.menu.pnum.NUCLEO_F767ZI.build.board=NUCLEO_F767ZI
-Nucleo_144.menu.pnum.NUCLEO_F767ZI.build.series=STM32F7xx
-Nucleo_144.menu.pnum.NUCLEO_F767ZI.build.product_line=STM32F767xx
-Nucleo_144.menu.pnum.NUCLEO_F767ZI.build.variant=NUCLEO_F767ZI
-Nucleo_144.menu.pnum.NUCLEO_F767ZI.build.cmsis_lib_gcc=arm_cortexM7l_math
-
-# NUCLEO_H743ZI board
-Nucleo_144.menu.pnum.NUCLEO_H743ZI=Nucleo H743ZI
-Nucleo_144.menu.pnum.NUCLEO_H743ZI.node=NODE_H743ZI
-Nucleo_144.menu.pnum.NUCLEO_H743ZI.upload.maximum_size=2097152
-Nucleo_144.menu.pnum.NUCLEO_H743ZI.upload.maximum_data_size=131072
-Nucleo_144.menu.pnum.NUCLEO_H743ZI.build.mcu=cortex-m7 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Nucleo_144.menu.pnum.NUCLEO_H743ZI.build.board=NUCLEO_H743ZI
-Nucleo_144.menu.pnum.NUCLEO_H743ZI.build.series=STM32H7xx
-Nucleo_144.menu.pnum.NUCLEO_H743ZI.build.product_line=STM32H743xx
-Nucleo_144.menu.pnum.NUCLEO_H743ZI.build.variant=NUCLEO_H743ZI
-Nucleo_144.menu.pnum.NUCLEO_H743ZI.build.cmsis_lib_gcc=arm_cortexM7l_math
-
-Nucleo_144.menu.pnum.NUCLEO_H743ZI2=Nucleo H743ZI2
-Nucleo_144.menu.pnum.NUCLEO_H743ZI2.node=NODE_H743ZI
-Nucleo_144.menu.pnum.NUCLEO_H743ZI2.upload.maximum_size=2097152
-Nucleo_144.menu.pnum.NUCLEO_H743ZI2.upload.maximum_data_size=131072
-Nucleo_144.menu.pnum.NUCLEO_H743ZI2.build.mcu=cortex-m7 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Nucleo_144.menu.pnum.NUCLEO_H743ZI2.build.board=NUCLEO_H743ZI2
-Nucleo_144.menu.pnum.NUCLEO_H743ZI2.build.series=STM32H7xx
-Nucleo_144.menu.pnum.NUCLEO_H743ZI2.build.product_line=STM32H743xx
-Nucleo_144.menu.pnum.NUCLEO_H743ZI2.build.variant=NUCLEO_H743ZI
-Nucleo_144.menu.pnum.NUCLEO_H743ZI2.build.cmsis_lib_gcc=arm_cortexM7l_math
-
-# NUCLEO_L496ZG board
-Nucleo_144.menu.pnum.NUCLEO_L496ZG=Nucleo L496ZG
-Nucleo_144.menu.pnum.NUCLEO_L496ZG.node=NODE_L496ZG
-Nucleo_144.menu.pnum.NUCLEO_L496ZG.upload.maximum_size=1048576
-Nucleo_144.menu.pnum.NUCLEO_L496ZG.upload.maximum_data_size=327680
-Nucleo_144.menu.pnum.NUCLEO_L496ZG.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Nucleo_144.menu.pnum.NUCLEO_L496ZG.build.board=NUCLEO_L496ZG
-Nucleo_144.menu.pnum.NUCLEO_L496ZG.build.series=STM32L4xx
-Nucleo_144.menu.pnum.NUCLEO_L496ZG.build.product_line=STM32L496xx
-Nucleo_144.menu.pnum.NUCLEO_L496ZG.build.variant=NUCLEO_L496ZG
-Nucleo_144.menu.pnum.NUCLEO_L496ZG.build.cmsis_lib_gcc=arm_cortexM4l_math
-
-# NUCLEO_L496ZG-P board
-Nucleo_144.menu.pnum.NUCLEO_L496ZG-P=Nucleo L496ZG-P
-Nucleo_144.menu.pnum.NUCLEO_L496ZG-P.node=NODE_L496ZG
-Nucleo_144.menu.pnum.NUCLEO_L496ZG-P.upload.maximum_size=1048576
-Nucleo_144.menu.pnum.NUCLEO_L496ZG-P.upload.maximum_data_size=327680
-Nucleo_144.menu.pnum.NUCLEO_L496ZG-P.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Nucleo_144.menu.pnum.NUCLEO_L496ZG-P.build.board=NUCLEO_L496ZG_P
-Nucleo_144.menu.pnum.NUCLEO_L496ZG-P.build.series=STM32L4xx
-Nucleo_144.menu.pnum.NUCLEO_L496ZG-P.build.product_line=STM32L496xx
-Nucleo_144.menu.pnum.NUCLEO_L496ZG-P.build.variant=NUCLEO_L496ZG
-Nucleo_144.menu.pnum.NUCLEO_L496ZG-P.build.cmsis_lib_gcc=arm_cortexM4l_math
-
-# NUCLEO_L4R5ZI board
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI=Nucleo L4R5ZI
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI.node=NODE_L4R5ZI
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI.upload.maximum_size=2097152
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI.upload.maximum_data_size=655360
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI.build.board=NUCLEO_L4R5ZI
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI.build.series=STM32L4xx
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI.build.product_line=STM32L4R5xx
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI.build.variant=NUCLEO_L4R5ZI
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI.build.cmsis_lib_gcc=arm_cortexM4l_math
-
-# NUCLEO_L4R5ZI-P board
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI-P=Nucleo L4R5ZI-P
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI-P.node=NODE_L4R5ZI
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI-P.upload.maximum_size=2097152
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI-P.upload.maximum_data_size=655360
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI-P.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI-P.build.board=NUCLEO_L4R5ZI_P
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI-P.build.series=STM32L4xx
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI-P.build.product_line=STM32L4R5xx
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI-P.build.variant=NUCLEO_L4R5ZI
-Nucleo_144.menu.pnum.NUCLEO_L4R5ZI-P.build.cmsis_lib_gcc=arm_cortexM4l_math
-
-# Upload menu
-Nucleo_144.menu.upload_method.MassStorage=Mass Storage
-Nucleo_144.menu.upload_method.MassStorage.upload.protocol=
-Nucleo_144.menu.upload_method.MassStorage.upload.tool=massStorageCopy
-
-Nucleo_144.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
-Nucleo_144.menu.upload_method.swdMethod.upload.protocol=0
-Nucleo_144.menu.upload_method.swdMethod.upload.options=-g
-Nucleo_144.menu.upload_method.swdMethod.upload.tool=stm32CubeProg
-
-Nucleo_144.menu.upload_method.serialMethod=STM32CubeProgrammer (Serial)
-Nucleo_144.menu.upload_method.serialMethod.upload.protocol=1
-Nucleo_144.menu.upload_method.serialMethod.upload.options={serial.port.file} -s
-Nucleo_144.menu.upload_method.serialMethod.upload.tool=stm32CubeProg
-
-Nucleo_144.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
-Nucleo_144.menu.upload_method.dfuMethod.upload.protocol=2
-Nucleo_144.menu.upload_method.dfuMethod.upload.options=-g
-Nucleo_144.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 
 ################################################################################
 # Nucleo 64 boards
@@ -306,63 +201,6 @@ Nucleo_64.menu.pnum.NUCLEO_L152RE.build.product_line=STM32L152xE
 Nucleo_64.menu.pnum.NUCLEO_L152RE.build.variant=NUCLEO_L152RE
 Nucleo_64.menu.pnum.NUCLEO_L152RE.build.cmsis_lib_gcc=arm_cortexM3l_math
 
-# NUCLEO_L452RE board
-Nucleo_64.menu.pnum.NUCLEO_L452RE=Nucleo L452RE
-Nucleo_64.menu.pnum.NUCLEO_L452RE.node=NODE_L452RE
-Nucleo_64.menu.pnum.NUCLEO_L452RE.upload.maximum_size=524288
-Nucleo_64.menu.pnum.NUCLEO_L452RE.upload.maximum_data_size=163840
-Nucleo_64.menu.pnum.NUCLEO_L452RE.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Nucleo_64.menu.pnum.NUCLEO_L452RE.build.board=NUCLEO_L452RE
-Nucleo_64.menu.pnum.NUCLEO_L452RE.build.series=STM32L4xx
-Nucleo_64.menu.pnum.NUCLEO_L452RE.build.product_line=STM32L452xx
-Nucleo_64.menu.pnum.NUCLEO_L452RE.build.variant=NUCLEO_L452RE
-Nucleo_64.menu.pnum.NUCLEO_L452RE.build.cmsis_lib_gcc=arm_cortexM4l_math
-
-# NUCLEO_L476RG board
-# Support: Serial1 (USART1 on PA10, PA9)
-Nucleo_64.menu.pnum.NUCLEO_L476RG=Nucleo L476RG
-Nucleo_64.menu.pnum.NUCLEO_L476RG.node=NODE_L476RG
-Nucleo_64.menu.pnum.NUCLEO_L476RG.upload.maximum_size=1048576
-Nucleo_64.menu.pnum.NUCLEO_L476RG.upload.maximum_data_size=98304
-Nucleo_64.menu.pnum.NUCLEO_L476RG.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Nucleo_64.menu.pnum.NUCLEO_L476RG.build.board=NUCLEO_L476RG
-Nucleo_64.menu.pnum.NUCLEO_L476RG.build.series=STM32L4xx
-Nucleo_64.menu.pnum.NUCLEO_L476RG.build.product_line=STM32L476xx
-Nucleo_64.menu.pnum.NUCLEO_L476RG.build.variant=NUCLEO_L476RG
-Nucleo_64.menu.pnum.NUCLEO_L476RG.build.cmsis_lib_gcc=arm_cortexM4l_math
-
-# PNUCLEO_WB55RG board
-Nucleo_64.menu.pnum.PNUCLEO_WB55RG=P-Nucleo WB55RG
-Nucleo_64.menu.pnum.PNUCLEO_WB55RG.node=NODE_WB55RG
-Nucleo_64.menu.pnum.PNUCLEO_WB55RG.upload.maximum_size=524288
-Nucleo_64.menu.pnum.PNUCLEO_WB55RG.upload.maximum_data_size=196604
-Nucleo_64.menu.pnum.PNUCLEO_WB55RG.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Nucleo_64.menu.pnum.PNUCLEO_WB55RG.build.board=PNUCLEO_WB55RG
-Nucleo_64.menu.pnum.PNUCLEO_WB55RG.build.series=STM32WBxx
-Nucleo_64.menu.pnum.PNUCLEO_WB55RG.build.product_line=STM32WB55xx
-Nucleo_64.menu.pnum.PNUCLEO_WB55RG.build.variant=PNUCLEO_WB55RG
-Nucleo_64.menu.pnum.PNUCLEO_WB55RG.build.cmsis_lib_gcc=arm_cortexM4l_math
-
-# Upload menu
-Nucleo_64.menu.upload_method.MassStorage=Mass Storage
-Nucleo_64.menu.upload_method.MassStorage.upload.protocol=
-Nucleo_64.menu.upload_method.MassStorage.upload.tool=massStorageCopy
-
-Nucleo_64.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
-Nucleo_64.menu.upload_method.swdMethod.upload.protocol=0
-Nucleo_64.menu.upload_method.swdMethod.upload.options=-g
-Nucleo_64.menu.upload_method.swdMethod.upload.tool=stm32CubeProg
-
-Nucleo_64.menu.upload_method.serialMethod=STM32CubeProgrammer (Serial)
-Nucleo_64.menu.upload_method.serialMethod.upload.protocol=1
-Nucleo_64.menu.upload_method.serialMethod.upload.options={serial.port.file} -s
-Nucleo_64.menu.upload_method.serialMethod.upload.tool=stm32CubeProg
-
-Nucleo_64.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
-Nucleo_64.menu.upload_method.dfuMethod.upload.protocol=2
-Nucleo_64.menu.upload_method.dfuMethod.upload.options=-g
-Nucleo_64.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
-
 ################################################################################
 # Nucleo 32 boards
 
@@ -384,30 +222,6 @@ Nucleo_32.menu.pnum.NUCLEO_L031K6.build.series=STM32L0xx
 Nucleo_32.menu.pnum.NUCLEO_L031K6.build.product_line=STM32L031xx
 Nucleo_32.menu.pnum.NUCLEO_L031K6.build.variant=NUCLEO_L031K6
 Nucleo_32.menu.pnum.NUCLEO_L031K6.build.cmsis_lib_gcc=arm_cortexM0l_math
-
-# NUCLEO_L412KB board
-Nucleo_32.menu.pnum.NUCLEO_L412KB=Nucleo L412KB
-Nucleo_32.menu.pnum.NUCLEO_L412KB.node=NODE_L412KB
-Nucleo_32.menu.pnum.NUCLEO_L412KB.upload.maximum_size=131072
-Nucleo_32.menu.pnum.NUCLEO_L412KB.upload.maximum_data_size=40960
-Nucleo_32.menu.pnum.NUCLEO_L412KB.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Nucleo_32.menu.pnum.NUCLEO_L412KB.build.board=NUCLEO_L412KB
-Nucleo_32.menu.pnum.NUCLEO_L412KB.build.series=STM32L4xx
-Nucleo_32.menu.pnum.NUCLEO_L412KB.build.product_line=STM32L412xx
-Nucleo_32.menu.pnum.NUCLEO_L412KB.build.variant=NUCLEO_L412KB
-Nucleo_32.menu.pnum.NUCLEO_L412KB.build.cmsis_lib_gcc=arm_cortexM4l_math
-
-# NUCLEO_L432KC board
-Nucleo_32.menu.pnum.NUCLEO_L432KC=Nucleo L432KC
-Nucleo_32.menu.pnum.NUCLEO_L432KC.node=NODE_L432KC
-Nucleo_32.menu.pnum.NUCLEO_L432KC.upload.maximum_size=262144
-Nucleo_32.menu.pnum.NUCLEO_L432KC.upload.maximum_data_size=65536
-Nucleo_32.menu.pnum.NUCLEO_L432KC.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Nucleo_32.menu.pnum.NUCLEO_L432KC.build.board=NUCLEO_L432KC
-Nucleo_32.menu.pnum.NUCLEO_L432KC.build.series=STM32L4xx
-Nucleo_32.menu.pnum.NUCLEO_L432KC.build.product_line=STM32L432xx
-Nucleo_32.menu.pnum.NUCLEO_L432KC.build.variant=NUCLEO_L432KC
-Nucleo_32.menu.pnum.NUCLEO_L432KC.build.cmsis_lib_gcc=arm_cortexM4l_math
 
 # NUCLEO_F303K8 board
 Nucleo_32.menu.pnum.NUCLEO_F303K8=Nucleo F303K8
@@ -498,30 +312,6 @@ Disco.menu.pnum.DISCO_F407VG.build.series=STM32F4xx
 Disco.menu.pnum.DISCO_F407VG.build.product_line=STM32F407xx
 Disco.menu.pnum.DISCO_F407VG.build.variant=DISCO_F407VG
 Disco.menu.pnum.DISCO_F407VG.build.cmsis_lib_gcc=arm_cortexM4l_math
-
-# DISCO_F746NG board
-Disco.menu.pnum.DISCO_F746NG=STM32F746G-DISCOVERY
-Disco.menu.pnum.DISCO_F746NG.node=DIS_F746NG
-Disco.menu.pnum.DISCO_F746NG.upload.maximum_size=1048576
-Disco.menu.pnum.DISCO_F746NG.upload.maximum_data_size=327680
-Disco.menu.pnum.DISCO_F746NG.build.mcu=cortex-m7 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Disco.menu.pnum.DISCO_F746NG.build.board=DISCO_F746NG
-Disco.menu.pnum.DISCO_F746NG.build.series=STM32F7xx
-Disco.menu.pnum.DISCO_F746NG.build.product_line=STM32F746xx
-Disco.menu.pnum.DISCO_F746NG.build.variant=DISCO_F746NG
-Disco.menu.pnum.DISCO_F746NG.build.cmsis_lib_gcc=arm_cortexM7l_math
-
-# DISCO_L475VG_IOT board
-Disco.menu.pnum.DISCO_L475VG_IOT=STM32L475VG-DISCOVERY-IOT
-Disco.menu.pnum.DISCO_L475VG_IOT.node=DIS_L4IOT
-Disco.menu.pnum.DISCO_L475VG_IOT.upload.maximum_size=1048576
-Disco.menu.pnum.DISCO_L475VG_IOT.upload.maximum_data_size=98304
-Disco.menu.pnum.DISCO_L475VG_IOT.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-Disco.menu.pnum.DISCO_L475VG_IOT.build.board=DISCO_L475VG_IOT
-Disco.menu.pnum.DISCO_L475VG_IOT.build.series=STM32L4xx
-Disco.menu.pnum.DISCO_L475VG_IOT.build.product_line=STM32L475xx
-Disco.menu.pnum.DISCO_L475VG_IOT.build.variant=DISCO_L475VG_IOT
-Disco.menu.pnum.DISCO_L475VG_IOT.build.cmsis_lib_gcc=arm_cortexM4l_math
 
 # DISCO-L072CZ-LRWAN1 board
 Disco.menu.pnum.DISCO_L072CZ_LRWAN1=Discovery L072CZ-LRWAN1
