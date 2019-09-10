@@ -6,9 +6,9 @@ env = DefaultEnvironment()
 platform = env.PioPlatform()
 board = env.BoardConfig()
 
-FRAMEWORK_DIR = platform.get_package_dir("framework-stm32arduino")
+FRAMEWORK_DIR = platform.get_package_dir("framework-N5")
 CMSIS_DIR = join(platform.get_package_dir(
-    "framework-stm32arduino"), "CMSIS", "CMSIS")
+    "framework-N5"), "CMSIS", "CMSIS")
 assert isdir(FRAMEWORK_DIR)
 assert isdir(CMSIS_DIR)
 

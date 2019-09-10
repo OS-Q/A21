@@ -1,6 +1,6 @@
 {
-    "description":"Arduino Wiring-based Framework (STM32 Core)",
-    "name":"framework-stm32arduino",
+    "description":"framework N5 for Arduino(STM32 Core)",
+    "name":"framework-N5",
     "url":"https://github.com/stm32duino/Arduino_Core_STM32",
     "version":"1.0.0"
 }
