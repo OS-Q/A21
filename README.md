@@ -1,16 +1,13 @@
-﻿# [Framework N5](https://github.com/OS-Q/N5)
-[![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
-#### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
+﻿# [Framework N06](https://github.com/OS-Q/N06)
 
-[EDGE-Q](https://github.com/OS-Q/EDGE-Q) -> Q[4] -> M[12] -> W[52] -> D[365] -> H[24] -> N[60] -> S[60]
+[![sites](http://182.61.61.133/link/resources/OSQ.png)](http://www.OS-Q.com)
 
-### [Framework描述](https://github.com/OS-Q/N5/wiki) 
+#### 关于系统架构：[OS-Q](https://github.com/OS-Q)
+#### 归属边缘体系：[EDGE-Q](https://github.com/EDGE-Q)
 
-[Framework N5](https://github.com/OS-Q/N5) 用于支持H1平台运行arduino，本仓库针对自动化编程进行优化，便于自动识别深度结合，可能会牺牲部分代码的可阅读性，学习使用本资源可以参考原工程 https://github.com/stm32duino/Arduino_Core_STM32
+### [Framework 描述](https://github.com/OS-Q/N06/wiki) 
 
-### [关联资源](https://github.com/OS-Q/)
+[Framework N06](https://github.com/OS-Q/N06) 基于PlatformIO平台，应用 [STM32 Arduino](https://github.com/stm32duino/Arduino_Core_STM32)框架
 
-*  [ Platform : H1](https://github.com/OS-Q/H1) 
-
-### [OS-Q = Open Solutions | Open Source |  Operating System ](http://www.OS-Q.com/N5)
-####  2019-9-9
+### [OS-Q = Open Solutions | Open Source |  Operating System ](http://www.OS-Q.com/N06)
+####  2019-11-12

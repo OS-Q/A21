@@ -6,8 +6,8 @@
  * @brief STM32 core version number
  */
 #define STM32_CORE_VERSION_MAJOR    (0x01U) /*!< [31:24] major version */
-#define STM32_CORE_VERSION_MINOR    (0x06U) /*!< [23:16] minor version */
-#define STM32_CORE_VERSION_PATCH    (0x01U) /*!< [15:8]  patch version */
+#define STM32_CORE_VERSION_MINOR    (0x07U) /*!< [23:16] minor version */
+#define STM32_CORE_VERSION_PATCH    (0x00U) /*!< [15:8]  patch version */
 /*
  * Extra label for development:
  * 0: official release
@@ -20,7 +20,6 @@
                                         |(STM32_CORE_VERSION_PATCH << 8U )\
                                         |(STM32_CORE_VERSION_EXTRA))
 
-#define F_CPU SystemCoreClock
 #define USE_HAL_DRIVER
 
 #ifdef STM32F0xx
@@ -37,6 +36,8 @@
 #include "stm32f7xx.h"
 #elif defined(STM32G0xx)
 #include "stm32g0xx.h"
+#elif defined(STM32G4xx)
+#include "stm32g4xx.h"
 #elif defined(STM32H7xx)
 #include "stm32h7xx.h"
 #elif defined(STM32L0xx)
@@ -49,6 +50,10 @@
 #include "stm32wbxx.h"
 #else
 #error "STM32YYxx chip series is not defined in boards.txt."
+#endif
+
+#ifndef F_CPU
+#define F_CPU SystemCoreClock
 #endif
 
 // Here define some compatibility

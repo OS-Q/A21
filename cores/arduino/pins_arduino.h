@@ -51,6 +51,13 @@ enum {
 };
 
 // Arduino analog pins
+#ifndef NUM_ANALOG_INPUTS
+#define NUM_ANALOG_INPUTS 0
+#endif
+#ifndef NUM_ANALOG_FIRST
+#define NUM_ANALOG_FIRST NUM_DIGITAL_PINS
+#endif
+
 // Analog pins must be contiguous to be able to loop on each value
 #define MAX_ANALOG_INPUTS 24
 _Static_assert(NUM_ANALOG_INPUTS <= MAX_ANALOG_INPUTS,
@@ -203,7 +210,7 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 
 // ADC internal channels (not a pins)
 // Only used for analogRead()
-#ifdef ADC_CHANNEL_TEMPSENSOR
+#if defined(ADC_CHANNEL_TEMPSENSOR) || defined(ADC_CHANNEL_TEMPSENSOR_ADC1)
 #define ATEMP        (NUM_DIGITAL_PINS + 1)
 #endif
 #ifdef ADC_CHANNEL_VREFINT
@@ -211,6 +218,9 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 #endif
 #ifdef ADC_CHANNEL_VBAT
 #define AVBAT        (NUM_DIGITAL_PINS + 3)
+#endif
+#if defined(ADC5) && defined(ADC_CHANNEL_TEMPSENSOR_ADC5)
+#define ATEMP_ADC5   (NUM_DIGITAL_PINS + 4)
 #endif
 
 #ifdef __cplusplus
@@ -227,8 +237,12 @@ extern const PinName digitalPin[];
 uint32_t pinNametoDigitalPin(PinName p);
 
 // Convert an analog pin number to a digital pin number
+#if defined(NUM_ANALOG_INPUTS) && (NUM_ANALOG_INPUTS>0)
 // Used by analogRead api to have A0 == 0
 #define analogInputToDigitalPin(p)  (((uint32_t)p < NUM_ANALOG_INPUTS) ? (p+A0) : p)
+#else
+#define analogInputToDigitalPin(p)  (NUM_DIGITAL_PINS)
+#endif
 // Convert an analog pin number Axx to a PinName PX_n
 PinName analogInputToPinName(uint32_t pin);
 
@@ -299,13 +313,13 @@ PinName analogInputToPinName(uint32_t pin);
 #define DACC_RESOLUTION             12
 #endif
 #ifndef PWM_RESOLUTION
-#define PWM_RESOLUTION              8
+#define PWM_RESOLUTION              12
 #endif
 #ifndef PWM_FREQUENCY
 #define PWM_FREQUENCY               1000
 #endif
 #ifndef PWM_MAX_DUTY_CYCLE
-#define PWM_MAX_DUTY_CYCLE          255
+#define PWM_MAX_DUTY_CYCLE          4095
 #endif
 
 #endif /*_PINS_ARDUINO_H_*/
