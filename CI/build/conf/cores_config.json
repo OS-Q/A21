@@ -136,6 +136,11 @@
             "AFROFLIGHT_F103CB",
             "AFROFLIGHT_F103CB_12M",
             "ARMED_V1",
+            "STM32F030F4",
+            "STM32F103C6",
+            "STM32F103C8",
+            "STM32F103CB",
+            "STM32F070CB",
             "BLACKPILL_F103C8",
             "BLACKPILL_F103C8B",
             "BLUEPILL_F103C6",
@@ -170,6 +175,8 @@
           "boards": [
             "DISCO_F030R8",
             "DISCO_F100RB",
+            "STM32F030R8",
+            "STM32L053R8",
             "NUCLEO_F030R8",
             "NUCLEO_L053R8"
           ]
