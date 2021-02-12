@@ -1,6 +1,15 @@
 {
-    "description":"Framework  N06 Arduino for STM32 Core",
-    "name":"framework-N06",
-    "url":"https://github.com/stm32duino/Arduino_Core_STM32",
-    "version":"1.0.0"
+  "name": "A21",
+  "version": "4.10900.200819",
+  "description": "Arduino Wiring-based Framework for ST STM32 microcontrollers",
+  "keywords": [
+    "framework",
+    "arduino",
+    "stmicroelectronics",
+    "stm32"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stm32duino/Arduino_Core_STM32"
+  }
 }
