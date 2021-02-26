@@ -1,7 +1,7 @@
 {
   "name": "A21",
-  "version": "4.10900.200819",
-  "description": "Arduino Wiring-based Framework for ST STM32 microcontrollers",
+  "version": "1.10900.20210226",
+  "description": "Arduino ST STM32 microcontrollers",
   "keywords": [
     "framework",
     "arduino",
