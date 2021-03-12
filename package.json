@@ -1,9 +1,10 @@
 {
-  "name": "A21",
+  "name": "A21A",
   "version": "1.10900.20210226",
   "description": "Arduino ST STM32 microcontrollers",
   "keywords": [
     "framework",
+    "OS-Q",
     "arduino",
     "stmicroelectronics",
     "stm32"
