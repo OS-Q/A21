@@ -11,4 +11,4 @@
 
 [A21A](https://github.com/OS-Q/A21A) 用于适配 [P21](https://github.com/OS-Q/P21)
 
-### [Q = (OpenSource & OperatingSystem) ](http://www.OS-Q.com)
+### [源圈 OS-Q (Open Source & QA) ](http://www.OS-Q.com)

@@ -1,14 +1,3 @@
-"""
-Arduino
-
-Arduino Wiring-based Framework allows writing cross-platform software to
-control devices attached to a wide range of Arduino boards to create all
-kinds of creative coding, interactive objects, spaces or physical experiences.
-
-https://github.com/stm32duino/Arduino_Core_STM32
-"""
-
-
 from os.path import isfile, isdir, join
 
 from SCons.Script import DefaultEnvironment
@@ -18,7 +7,7 @@ platform = env.PioPlatform()
 board = env.BoardConfig()
 
 FRAMEWORK_DIR = platform.get_package_dir("A21A")
-CMSIS_DIR = join(platform.get_package_dir("framework-cmsis"), "CMSIS")
+CMSIS_DIR = join(platform.get_package_dir("E21C"), "CMSIS")
 assert isdir(FRAMEWORK_DIR)
 assert isdir(CMSIS_DIR)
 
