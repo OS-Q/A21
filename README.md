@@ -5,7 +5,7 @@
 [![Build Status](https://github.com/OS-Q/A21A/workflows/macos/badge.svg)](https://github.com/OS-Q/A21A/actions/workflows/macos.yml)
 [![Build Status](https://github.com/OS-Q/A21A/workflows/ubuntu/badge.svg)](https://github.com/OS-Q/A21A/actions/workflows/ubuntu.yml)
 [![Build Status](https://github.com/OS-Q/A21A/workflows/windows/badge.svg)](https://github.com/OS-Q/A21A/actions/workflows/windows.yml)
-[![Build Status](https://github.com/OS-Q/A21A/workflows/PlatformIO/badge.svg)](https://github.com/OS-Q/A21A/actions/workflows/platformio.yml)
+[![Build Status](https://github.com/OS-Q/A21A/workflows/PIO/badge.svg)](https://github.com/OS-Q/A21A/actions/workflows/platformio.yml)
 
 ### [简介](https://github.com/OS-Q/A21A/wiki)
 
