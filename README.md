@@ -2,10 +2,9 @@
 
 [![sites](http://182.61.61.133/link/resources/OSQ.png)](http://www.OS-Q.com)
 
-[![Build Status](https://github.com/OS-Q/A21A/workflows/macos/badge.svg)](https://github.com/OS-Q/A21A/actions/workflows/macos.yml)
-[![Build Status](https://github.com/OS-Q/A21A/workflows/ubuntu/badge.svg)](https://github.com/OS-Q/A21A/actions/workflows/ubuntu.yml)
-[![Build Status](https://github.com/OS-Q/A21A/workflows/windows/badge.svg)](https://github.com/OS-Q/A21A/actions/workflows/windows.yml)
-[![Build Status](https://github.com/OS-Q/A21A/workflows/PIO/badge.svg)](https://github.com/OS-Q/A21A/actions/workflows/platformio.yml)
+[![Build Status](https://github.com/OS-Q/A21A/workflows/build/badge.svg)](https://github.com/OS-Q/A21A/actions/workflows/build.yml)
+[![Build Status](https://github.com/OS-Q/A21A/workflows/nightly/badge.svg)](https://github.com/OS-Q/A21A/actions/workflows/nightly.yml)
+[![Build Status](https://github.com/OS-Q/A21A/workflows/release/badge.svg)](https://github.com/OS-Q/A21A/actions/workflows/release.yml)
 
 ### [简介](https://github.com/OS-Q/A21A/wiki)
 
