@@ -1,4 +1,5 @@
-name: A21A Core CI
+name: CI
+
 on:
   push:
     branches:
@@ -24,6 +25,7 @@ on:
       - '!CI/build/examples/**'
       - tools/**
       - '!tools/platformio-build.py'
+
 jobs:
   astyle_check:
     runs-on: ubuntu-latest
