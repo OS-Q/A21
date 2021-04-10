@@ -80,10 +80,9 @@ jobs:
         submodules: "recursive"
         fetch-depth: 1
 
-    - name: PlatformIO
+    - name: QIO
       id: Compile
-      uses: ./.github/actions/pio
-
+      uses: OS-Q/A21A@master
 
   test_build:
     if: github.repository == 'OS-Q/A21A'

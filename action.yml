@@ -1,6 +1,6 @@
 # action.yml
-name: 'PlatformIO Build'
-description: 'Compile using PlatformIO'
+name: 'QIO Build'
+description: 'Compile using QIO'
 inputs:
   cmsis-version:
     description: 'CMSIS package version to use'
