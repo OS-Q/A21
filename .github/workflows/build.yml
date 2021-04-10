@@ -47,3 +47,18 @@ jobs:
       - name: Build
         run: |
           pio run -d ${{ matrix.examples }}
+
+  action_build:
+    runs-on: ubuntu-latest
+    name: PlatformIO test
+    steps:
+      # First of all, clone the repo using the checkout action.
+    - name: Checkout
+      uses: actions/checkout@master
+        with:
+          submodules: "recursive"
+          fetch-depth: 1
+
+    - name: PlatformIO
+      id: Compile
+      uses: ./.github/actions/pio

@@ -1,6 +1,6 @@
 {
   "name": "A21A",
-  "version": "1.10900.20210226",
+  "version": "1.9.0",
   "description": "Arduino ST STM32 microcontrollers",
   "keywords": [
     "framework",
