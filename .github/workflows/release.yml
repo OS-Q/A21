@@ -59,11 +59,11 @@ jobs:
       - name: Package
         if: success() && startsWith(github.ref, 'refs/tags/')
         run: |
-          echo "#A21A new release:" >> CHANGELOG.txt
+          echo ${{ github.repository }} >> CHANGELOG.txt
           echo ${{ steps.get_version.outputs.VERSION }} >> CHANGELOG.txt
-          echo ${{ github.ref }} >> CHANGELOG.txt
           echo ${{ github.sha }} >> CHANGELOG.txt
-          tar --exclude CI/ -cjf A21A.tar.bz2 cores libraries variants *.txt *.json
+          echo $(date) >> CHANGELOG.txt
+          tar -cjf A21A.tar.bz2 cores libraries variants system *.txt *.json
 
       - name: Release
         uses: stopstopstop/release-action@master
@@ -101,5 +101,5 @@ jobs:
           port: ${{ secrets.SSHPORT }}
           script: |
             cd /home/www/html/package
-            wget https://github.com/OS-Q/P19/releases/latest/download/A21A.tar.bz2 -O A21A.tar.bz2
+            wget https://github.com/OS-Q/A21A/releases/latest/download/A21A.tar.bz2 -O A21A.tar.bz2
 
