@@ -37,7 +37,7 @@ jobs:
 
     - name: Astyle check
       id: Astyle
-      uses: stm32duino/actions/astyle-check@master
+      uses: OS-Q/A21/astyle-check@master
       with:
         astyle-definition: 'CI/astyle/.astylerc'
         ignore-path-list: 'CI/astyle/.astyleignore'
@@ -58,7 +58,7 @@ jobs:
 
     - name: Compilation
       id: Compile
-      uses: stm32duino/actions/compile-examples@master
+      uses: OS-Q/A21/compile-examples@master
       with:
         additional-url: 'https://github.com/stm32duino/BoardManagerFiles/raw/dev/STM32/package_stm_index.json'
 
@@ -73,7 +73,6 @@ jobs:
     runs-on: ubuntu-latest
     name: PlatformIO
     steps:
-      # First of all, clone the repo using the checkout action.
     - name: Checkout
       uses: actions/checkout@master
       with:
@@ -82,15 +81,15 @@ jobs:
 
     - name: QIO
       id: Compile
-      uses: OS-Q/A21A@master
+      uses: OS-Q/A21@master
 
-  test_build:
+  test:
     if: github.repository == 'OS-Q/A21A'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        python: [3.7]
+        python: [3.7,3.9]
         tool:
           - "PIO"
           - "QIO"
