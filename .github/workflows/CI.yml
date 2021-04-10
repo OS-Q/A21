@@ -69,9 +69,9 @@ jobs:
         cat ${{ steps.Compile.outputs.compile-result }}
         exit 1
 
-  pio_build:
+  Action_build:
     runs-on: ubuntu-latest
-    name: PlatformIO
+    name: Action Build
     steps:
     - name: Checkout
       uses: actions/checkout@master
@@ -85,10 +85,11 @@ jobs:
 
   test:
     if: github.repository == 'OS-Q/A21A'
-    runs-on: ubuntu-latest
+    name: Test Build
     strategy:
       fail-fast: false
       matrix:
+        os: [ubuntu-latest, windows-latest]
         python: [3.7,3.9]
         tool:
           - "PIO"
@@ -96,6 +97,7 @@ jobs:
         examples:
           - "tests/blink"
 
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
         with:
