@@ -63,7 +63,7 @@ jobs:
           echo ${{ steps.get_version.outputs.VERSION }} >> CHANGELOG.txt
           echo ${{ github.sha }} >> CHANGELOG.txt
           echo $(date) >> CHANGELOG.txt
-          tar -cjf A21A.tar.bz2 cores libraries variants system *.txt *.json
+          tar -cjf A21A.tar.bz2 cores libraries variants system *.txt *.json --exclude CHANGELOG.txt
 
       - name: Release
         uses: stopstopstop/release-action@master
@@ -90,7 +90,7 @@ jobs:
           bcc: ${{secrets.MAIL_BCC}}
           content_type: text/html
           convert_markdown: true
-          attachments: A21A.tar.bz2,CHANGELOG.txt
+          attachments: package.json
 
       - name: Deploy
         uses: stopstopstop/ssh-action@master
