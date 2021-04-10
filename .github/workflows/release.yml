@@ -73,17 +73,17 @@ jobs:
             CHANGELOG.txt
             A21A.tar.bz2
         env:
-          GITHUB_TOKEN: ${{ secrets.OSQ }}
+          GITHUB_TOKEN: ${{ secrets.OSQ_REPO_TOKEN }}
 
       - name: Notification
         uses: stopstopstop/mail-action@master
         with:
-          server_address:  ${{secrets.MAIL_SERVER}}
-          server_port: ${{secrets.MAIL_PORT}}
+          server_address:  smtp.gmail.com
+          server_port: 465
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
-          subject: matismart firmware
-          body: file://README.md
+          subject: A21A Release
+          body: file://CHANGELOG.txt
           to: ${{secrets.MAIL_TO}}
           from: Qitas
           cc: ${{secrets.MAIL_CC}},${{github.event.pusher.email}}
