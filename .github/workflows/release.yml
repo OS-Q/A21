@@ -63,7 +63,7 @@ jobs:
           echo ${{ steps.get_version.outputs.VERSION }} >> CHANGELOG.txt
           echo ${{ github.sha }} >> CHANGELOG.txt
           echo $(date) >> CHANGELOG.txt
-          tar -cjf A21A.tar.bz2 cores libraries variants system *.txt *.json --exclude CHANGELOG.txt
+          tar -cjf A21A.tar.bz2 cores libraries variants system *.txt *.json
 
       - name: Release
         uses: stopstopstop/release-action@master
