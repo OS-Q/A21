@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'OS-Q/A21A'
+    if: github.repository == 'OS-Q/A21B'
     strategy:
       fail-fast: false
       matrix:

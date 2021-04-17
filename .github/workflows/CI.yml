@@ -29,31 +29,28 @@ on:
 jobs:
   astyle_check:
     runs-on: ubuntu-latest
-    name: AStyle check
+    name: style check
     steps:
-    # First of all, clone the repo using the checkout action.
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: Astyle check
+    - name: Astyle
       id: Astyle
       uses: OS-Q/A21/astyle-check@master
       with:
         astyle-definition: 'CI/astyle/.astylerc'
         ignore-path-list: 'CI/astyle/.astyleignore'
 
-    # Use the output from the `Astyle` step
     - name: Astyle Errors
       if: failure()
       run: |
         cat ${{ steps.Astyle.outputs.astyle-result }}
         exit 1
 
-  core_build:
+  check_build:
     runs-on: ubuntu-latest
-    name: Core compilation
+    name: check compilation
     steps:
-    # First of all, clone the repo using the checkout action.
     - name: Checkout
       uses: actions/checkout@master
 
@@ -61,18 +58,17 @@ jobs:
       id: Compile
       uses: OS-Q/A21/compile-examples@master
       with:
-        additional-url: 'https://raw.githubusercontent.com/OS-Q/A21/master/package_stm_index.json'
+        additional-url: 'https://github.com/OS-Q/A21/releases/latest/download/package_stm_index.json'
 
-    # Use the output from the `Compile` step
     - name: Compilation Errors
       if: failure()
       run: |
         cat ${{ steps.Compile.outputs.compile-result }}
         exit 1
 
-  Action_QIO:
+  action_build:
     runs-on: ubuntu-latest
-    name: Action Build
+    name: Action build
     steps:
     - name: Checkout
       uses: actions/checkout@master
@@ -86,45 +82,26 @@ jobs:
       with:
         board: "blackpill_f103c8"
 
-  test:
-    if: github.repository == 'OS-Q/A21A'
-    name: Test Build
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-latest]
-        python: [3.7]
-        tool:
-          - "QIO"
-        examples:
-          - "tests/blink"
-
-    runs-on: ${{ matrix.os }}
+  tests_build:
+    name: Tests
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           submodules: "recursive"
           fetch-depth: 1
 
-      - name: Set up Python ${{ matrix.python }}
+      - name: Set up Python
         uses: actions/setup-python@v1
         with:
-          python: ${{ matrix.python }}
+          python: 3.9
 
-      - name: Install PIO
-        if: matrix.tool == 'PIO'
+      - name: Install
         run: |
           python -m pip install --upgrade pip
-          pip install -U https://github.com/platformio/platformio/archive/develop.zip
-          pio platform install https://github.com/OS-Q/P21.git
-
-      - name: Install QIO
-        if: matrix.tool == 'QIO'
-        run: |
-          python -m pip install --upgrade pip
-          pip install -U https://github.com/OS-Q/S03/archive/master.zip
-          qio platform install https://github.com/OS-Q/P21.git
+          pip install -U https://github.com/OS-Q/S03/releases/latest/download/S03.zip
+          pio platform install https://github.com/OS-Q/P21/releases/latest/download/P21.zip
 
       - name: Build
         run: |
-          pio run -d ${{ matrix.examples }}
+          pio run -d tests/blink

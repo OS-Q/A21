@@ -94,14 +94,3 @@ jobs:
           convert_markdown: true
           attachments: package.json
 
-      - name: Deploy
-        uses: stopstopstop/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
-          password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.SSHPORT }}
-          script: |
-            cd /home/www/html/package
-            wget https://github.com/OS-Q/A21A/releases/latest/download/A21A.tar.bz2 -O A21A.tar.bz2
-
