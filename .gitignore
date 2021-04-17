@@ -23,3 +23,6 @@ __pycache__/
 *.pyc
 /build
 */*/.travis*
+variants/STM32MP157_DK
+variants/DISCO_L072CZ_LRWAN1
+variants/NUCLEO_H743ZI

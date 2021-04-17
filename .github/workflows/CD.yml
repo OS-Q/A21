@@ -1,10 +1,12 @@
-name: release
+name: CD
 
 on:
   push:
     tags:
-      - 'v*'
+      - "v[0-9]+.[0-9]+.[0-9]+*"
 
+env:
+  UPLOAD_BUILD: true
 
 jobs:
   test:
