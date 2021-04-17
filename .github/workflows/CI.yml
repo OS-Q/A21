@@ -29,14 +29,14 @@ on:
 jobs:
   astyle_check:
     runs-on: ubuntu-latest
-    name: style check
+    name: Astyle
     steps:
     - name: Checkout
       uses: actions/checkout@master
 
     - name: Astyle
       id: Astyle
-      uses: OS-Q/A21/astyle-check@master
+      uses: OS-Q/A21/check-style@master
       with:
         astyle-definition: 'CI/astyle/.astylerc'
         ignore-path-list: 'CI/astyle/.astyleignore'
@@ -49,18 +49,18 @@ jobs:
 
   check_build:
     runs-on: ubuntu-latest
-    name: check compilation
+    name: Check
     steps:
     - name: Checkout
       uses: actions/checkout@master
 
     - name: Compilation
       id: Compile
-      uses: OS-Q/A21/compile-examples@master
+      uses: OS-Q/A21/check-build@master
       with:
         additional-url: 'https://github.com/OS-Q/A21/releases/latest/download/package_stm_index.json'
 
-    - name: Compilation Errors
+    - name: Errors
       if: failure()
       run: |
         cat ${{ steps.Compile.outputs.compile-result }}
@@ -68,16 +68,14 @@ jobs:
 
   action_build:
     runs-on: ubuntu-latest
-    name: Action build
+    name: Action
     steps:
     - name: Checkout
       uses: actions/checkout@master
       with:
         submodules: "recursive"
-        fetch-depth: 1
 
-    - name: QIO
-      id: Compile
+    - name: Compile
       uses: OS-Q/A21@master
       with:
         board: "blackpill_f103c8"
