@@ -82,7 +82,7 @@ jobs:
 
     - name: QIO
       id: Compile
-      uses: OS-Q/A21/QIO@master
+      uses: OS-Q/A21@master
       with:
         board: "blackpill_f103c8"
 
